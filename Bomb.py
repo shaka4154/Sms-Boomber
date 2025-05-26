@@ -65,9 +65,16 @@ while True:
         try:
             if len(tel_no) != 10 or not tel_no.isdigit():
                 raise ValueError
+            if tel_no == "5433457671":
+                raise Exception("Yer mi lan Anadolu çocuğu")
         except ValueError:
             temizle()
             print(Fore.LIGHTRED_EX + "Kalfa, bu numara bizim diyara ait değil.")
+            sleep(3)
+            continue
+        except Exception as e:
+            temizle()
+            print(Fore.LIGHTRED_EX + str(e))
             sleep(3)
             continue
 
