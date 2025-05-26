@@ -4,14 +4,29 @@ from os import system
 from sms import SendSms
 import threading
 
+# Şifre kontrolü
+def temizle():
+    system("cls||clear")
+
+temizle()
+print(Fore.LIGHTBLUE_EX + "Divan'a giriş için şifre gerekli." + Style.RESET_ALL)
+sifre = input(Fore.LIGHTYELLOW_EX + "Şifreyi giriniz: " + Fore.LIGHTGREEN_EX)
+if sifre != "Emirhan":
+    temizle()
+    print(Fore.LIGHTRED_EX + "Yanlış şifre Kalfa, buradan öteye geçemezsin!")
+    sleep(3)
+    exit()
+temizle()
+print(Fore.LIGHTGREEN_EX + "Hoşgeldiniz Burak Bey!" + Style.RESET_ALL)
+sleep(2)
+
+# Servisleri topla
 servisler_sms = []
 for attribute in dir(SendSms):
     if callable(getattr(SendSms, attribute)) and not attribute.startswith('__'):
         servisler_sms.append(attribute)
 
-def temizle():
-    system("cls||clear")
-
+# Ana döngü
 while True:
     temizle()
     print(f"""{Fore.LIGHTYELLOW_EX}
