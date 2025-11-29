@@ -17,7 +17,7 @@ if sifre != "Emirhan":
     sleep(3)
     exit()
 temizle()
-print(Fore.LIGHTGREEN_EX + "Hoşgeldiniz Burak Bey!" + Style.RESET_ALL)
+print(Fore.LIGHTGREEN_EX + "Hoşgeldiniz Apoyusiken!" + Style.RESET_ALL)
 sleep(2)
 
 # Servisleri topla
