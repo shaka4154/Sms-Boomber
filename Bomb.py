@@ -13,7 +13,7 @@ print(Fore.LIGHTBLUE_EX + "Divan'a giriş için şifre gerekli." + Style.RESET_A
 sifre = input(Fore.LIGHTYELLOW_EX + "Şifreyi giriniz: " + Fore.LIGHTGREEN_EX)
 if sifre != "Emirhan":
     temizle()
-    print(Fore.LIGHTRED_EX + "Yanlış şifre Kalfa, buradan öteye geçemezsin!")
+    print(Fore.LIGHTRED_EX + "Yanlış şifre Kalfa, bacini sikim")
     sleep(3)
     exit()
 temizle()
@@ -30,12 +30,7 @@ for attribute in dir(SendSms):
 while True:
     temizle()
     print(f"""{Fore.LIGHTYELLOW_EX}
-      ██████╗ ███████╗███╗   ██╗ ██████╗  ██████╗ ██╗   ██╗
-     ██╔════╝ ██╔════╝████╗  ██║██╔═══██╗██╔════╝ ██║   ██║
-     ██║  ███╗█████╗  ██╔██╗ ██║██║   ██║██║  ███╗██║   ██║
-     ██║   ██║██╔══╝  ██║╚██╗██║██║   ██║██║   ██║██║   ██║
-     ╚██████╔╝███████╗██║ ╚████║╚██████╔╝╚██████╔╝╚██████╔╝
-      ╚═════╝ ╚══════╝╚═╝  ╚═══╝ ╚═════╝  ╚═════╝  ╚═════╝ 
+    𝐀𝐩𝐨𝐲𝐮𝐬𝐢𝐤𝐞𝐧
                 {Style.RESET_ALL}{Fore.LIGHTBLUE_EX}Genç Kalfa - Haberci Hanesi{Style.RESET_ALL}
 
 {Fore.LIGHTCYAN_EX}Ulaşılabilen Servis Sayısı: {len(servisler_sms)} {Style.RESET_ALL}
@@ -45,15 +40,15 @@ while True:
         secim = input(
             Fore.LIGHTMAGENTA_EX +
             " [1] Mesaj Gönder (Normal Hız)\n"
-            " [2] Mesaj Gönder (Tımarlı Sipahi Hızı)\n"
-            " [3] Divan'dan Ayrıl\n\n"
+            " [2] Mesaj Gönder (Tek Farlı Supra:D)\n"
+            " [3] Siktirip Gidicem\n\n"
             + Fore.LIGHTYELLOW_EX + " Emir buyur Kalfa: ")
         if secim == "":
             continue
         secim = int(secim)
     except ValueError:
         temizle()
-        print(Fore.LIGHTRED_EX + "Anlamadım Kalfa, tekrar dene...")
+        print(Fore.LIGHTRED_EX + "Bibokuda yap aq")
         sleep(3)
         continue
 
@@ -69,7 +64,7 @@ while True:
                 raise Exception("Yer mi lan Anadolu çocuğu")
         except ValueError:
             temizle()
-            print(Fore.LIGHTRED_EX + "Kalfa, bu numara bizim diyara ait değil.")
+            print(Fore.LIGHTRED_EX + "O bacini yerle bir ederim bu numara turk değil")
             sleep(3)
             continue
         except Exception as e:
@@ -79,11 +74,11 @@ while True:
             continue
 
         temizle()
-        print(Fore.LIGHTYELLOW_EX + "Eğer biliniyorsa, haberin gideceği posta hanesi (mail): " + Fore.LIGHTGREEN_EX, end="")
+        print(Fore.LIGHTYELLOW_EX + "mail gircen mi lan: " + Fore.LIGHTGREEN_EX, end="")
         mail = input()
         if mail and ("@" not in mail or ".com" not in mail):
             temizle()
-            print(Fore.LIGHTRED_EX + "Bu posta hanesi haritalarda görünmüyor.")
+            print(Fore.LIGHTRED_EX + "Yanlis.")
             sleep(3)
             continue
 
@@ -123,7 +118,7 @@ while True:
 
             temizle()
             try:
-                print(Fore.LIGHTYELLOW_EX + "Kaç nefes arayla yollansın: " + Fore.LIGHTGREEN_EX, end="")
+                print(Fore.LIGHTYELLOW_EX + "Kaç saniye: " + Fore.LIGHTGREEN_EX, end="")
                 aralik = int(input())
             except ValueError:
                 temizle()
